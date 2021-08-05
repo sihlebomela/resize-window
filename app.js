@@ -7,7 +7,7 @@ windowElem.addEventListener('mousemove', (mouse) => {
     if(mouse.x > windowElem.offsetWidth) {
         windowElem.addEventListener('mousemove', (mouse) => {
             if (mouse.which == 1 && mouse.x > (windowElem.offsetWidth/windowElem.offsetWidth)) {  // right mouse btn is clicked
-               document.querySelector('.window').style.width = `${mouse.x + 10}px`;
+               document.querySelector('.window').style.width = `${mouse.x + 5}px`;
                 resizeBtn.classList.add('grabbed')
             }
         })   

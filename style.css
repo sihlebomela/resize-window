@@ -8,7 +8,7 @@
 .window {
     width: 400px;
     height: 250px;
-    min-width: 70px;
+    min-width: 300px;
     max-width: 100%;
     background: #0b0716;
     border-radius: 8px;
@@ -20,7 +20,12 @@
     display: block;
     margin: 2rem 1rem;
     position: relative;
+    overflow-y: scroll;
 }
+.window code::-webkit-scrollbar {
+    display: none;
+}
+
 .top-bar {
     width: 100%;
     height: 30px;
